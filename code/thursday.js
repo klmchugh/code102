@@ -1,28 +1,34 @@
-var day = 'Thursday',
-    thursday = 'thursday';
+var day = 'Saturday',
+    saturday = 'saturday';
 
-// How many equals signs does it take to screw your code?
-if (day = 'thursday') {
-  console.log('Test 1: Well lookee there, it\'s ' + day);
-}
-
-// The case of the failing "if" statement
-if (day == 'Thursday') {
-  console.log('Test 2: Lo and behold, it\'s ' + day);
-}
-
-// Equals thrice, test once
-if (day === 'Thursday') {
-  console.log('Test 3: Huh. It\'s ' + day);
-}
-
-// TODO: After commenting out the 3 conditionals above,
-//       uncomment this code and run it.
-// if (day === 'Thursday') {
-//   console.log('Is it Friday yet?');
-// } else {
-//   console.log('Whistle while you work!')
+// // How many equals signs does it take to screw your code?
+// if (day = 'thursday') {
+//   console.log('Test 1: Well lookee there, it\'s ' + day);
 // }
+//
+// // The case of the failing "if" statement
+// if (day == 'Thursday') {
+//   console.log('Test 2: Lo and behold, it\'s ' + day);
+// }
+//
+// // Equals thrice, test once
+// if (day === 'Thursday') {
+//   console.log('Test 3: Huh. It\'s ' + day);
+//}
+
+//TODO: After commenting out the 3 conditionals above,
+      //uncomment this code and run it.
+if (day === 'Thursday') {
+  console.log('Is it Friday yet?');
+} else if (day === 'Saturday'||day === 'Sunday') {
+  console.log('Is it the weekend?');
+} else if (day === 'Monday') {
+  console.log('I hate Mondays');
+}
+else {
+  console.log('Whistle while you work!')
+}
+
 
 // TODO: Add an "else if" block to check whether it's Saturday
 //       and console.log() a different statement for the weekend.
@@ -46,6 +52,8 @@ if (day === 'Thursday') {
 
 var days = ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday'];
 
+// for(var i = 0; i < days.length; i++)
+// console.log(days[i])
 // console.log('index 0: ' + days[0]);
 // console.log('index 1: ' + days[1]);
 // console.log('index 2: ' + days[2]);
@@ -65,8 +73,9 @@ var days = ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 
 // TODO: On each iteration, use our randomly generated dayNumber
 //       to get a day from the days array, and console.log the
 //       name of the day.
-// var max = 100,
-//     result;
-// for (var j = 0; j < max; j++) {
-//   dayNumber = Math.floor(Math.random() * days.length);
-// }
+var max = 100,
+    result;
+for (var j = 0; j < max; j++) {
+  dayNumber = Math.floor(Math.random() * days.length)
+}
+console.log(days[dayNumber])
